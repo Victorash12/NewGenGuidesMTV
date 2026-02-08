@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewGen Guides Monteverde | Naturalist Tours</title>
+  <meta name="description" content="Naturalist-guided tours in Monteverde, Costa Rica. Birdwatching, night walks, and immersive forest experiences with a local guide." />
+
+  <style>
+    :root {
+      --green-dark: #1f3d2b;
+      --green-light: #4f7c5b;
+      --beige: #f4f1ec;
+      --text-dark: #1b1b1b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--beige);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background-color: var(--green-light);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+      font-size: 2.2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card.hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--green-dark);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: var(--green-dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <meta name="keywords" content="Monteverde tours, Monteverde naturalist guide, birdwatching Monteverde, night walk Monteverde, cloud forest Costa Rica" />
+  <meta name="author" content="NewGen Guides Monteverde" />
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', () => card.classList.add('hover'));
+        card.addEventListener('mouseleave', () => card.classList.remove('hover'));
+      });
+    });
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>NewGen Guides Monteverde</h1>
+  <p>Explore the cloud forest of Costa Rica with a local naturalist guide. Nature has no script — that is what makes it extraordinary.</p>
+  <a href="#contact" class="btn">Book a Tour</a>
+</header>
+
+<section id="tours">
+  <h2>Our Experiences</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Birdwatching Tour</h3>
+      <p>Identify iconic and endemic bird species while learning about behavior, ecology, and conservation.</p>
+      <p><strong>Duration:</strong> 3–4 hours</p>
+    </div>
+
+    <div class="card">
+      <h3>Naturalist Day Walk</h3>
+      <p>A slow-paced walk focused on understanding plants, insects, reptiles, and forest dynamics.</p>
+      <p><strong>Duration:</strong> 2–3 hours</p>
+    </div>
+
+    <div class="card">
+      <h3>Night Walk</h3>
+      <p>Discover the nocturnal life of the forest: frogs, insects, snakes, and mammals, always ethically observed.</p>
+      <p><strong>Duration:</strong> 2 hours</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About the Guide</h2>
+  <div class="about">
+    <div>
+      <p>I was born and raised in Monteverde. The forest was my classroom long before it became my profession.</p>
+      <p>As a naturalist guide, my goal is not to promise specific animals, but to help you understand how nature truly works.</p>
+      <p>Every tour is different. Learning is guaranteed.</p>
+    </div>
+    <img src="guide.jpg" alt="Naturalist guide in Monteverde forest" />
+  </div>
+</section>
+
+<section id="philosophy">
+  <h2>Tour Philosophy</h2>
+  <div class="grid">
+    <div class="card">Nature is unpredictable — that is its value.</div>
+    <div class="card">We never force wildlife encounters.</div>
+    <div class="card">Observation and understanding matter more than checklists.</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Book Your Tour</h2>
+  <form action="https://formspree.io/f/xxxxxxx" method="POST" class="card" style="max-width:600px; margin:auto;">
+    <label>Name<br><input type="text" name="name" required></label><br><br>
+    <label>Email<br><input type="email" name="email" required></label><br><br>
+    <label>Date<br><input type="date" name="date" required></label><br><br>
+    <label>Tour Type<br>
+      <select name="tour">
+        <option>Birdwatching</option>
+        <option>Day Walk</option>
+        <option>Night Walk</option>
+      </select>
+    </label><br><br>
+    <label>Message<br><textarea name="message" rows="4"></textarea></label><br><br>
+    <button type="submit" class="btn">Send Booking Request</button>
+  </form>
+</section>
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="grid">
+    <img src="gallery1.jpg" alt="Monteverde wildlife" />
+    <img src="gallery2.jpg" alt="Birdwatching Monteverde" />
+    <img src="gallery3.jpg" alt="Cloud forest night walk" />
+    <img src="gallery4.jpg" alt="Monteverde flora" />
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 NewGen Guides Monteverde · Costa Rica</p>
+</footer>
+
+</body>
+</html>
